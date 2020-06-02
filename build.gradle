@@ -59,15 +59,15 @@ tasks.withType(Test) {
     systemProperties = System.properties
 }
 
-task facebook_tests(type: Test) {
-    useJUnitPlatform {
-        includeTags 'facebook'
-    }
-}
-task google_tests(type: Test) {
-    useJUnitPlatform {
-        includeTags 'google'
-    }
+//task facebook_tests(type: Test) {
+//    useJUnitPlatform {
+//        includeTags 'facebook'
+//    }
+//}
+//task google_tests(type: Test) {
+//    useJUnitPlatform {
+//        includeTags 'google'
+//    }
     task yandex_tests(type: Test) {
         useJUnitPlatform {
             includeTags 'yandex'
@@ -96,4 +96,3 @@ task google_tests(type: Test) {
             println ""
         }
     }
-}
